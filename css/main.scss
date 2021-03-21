@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --primary-color: #2f0042;
+  --primary-color: #0a0033;
   --secondary-color: #ffa47d;
-  --sidebar-color: #2a003b;
+  // --sidebar-color: #2a003b;
+  --sidebar-color: #09002a;
   --music-player-color: #390a4d;
   --primary-text-color: #c4c4c4;
   --secondary-text-color: #898989;
@@ -36,6 +37,10 @@ body {
   &::-webkit-scrollbar-thumb:hover {
     background-color: #4d0e68;
   }
+}
+
+.menu-exit {
+  display: none;
 }
 
 .logo-container {
@@ -196,6 +201,10 @@ header {
     }
   }
 
+  .logo-container {
+    display: none;
+  }
+
   .header-account-settings {
     display: flex;
     align-items: center;
@@ -206,6 +215,10 @@ header {
       height: 3rem;
       border-radius: 50%;
     }
+  }
+
+  .menu-btn-mobile-tab {
+    display: none;
   }
 }
 
@@ -372,6 +385,11 @@ header {
 // Media Queries for Responsive Design
 
 @media only screen and (max-width: 500px) {
+  .menu-exit,
+  .menu-btn-mobile-tab {
+    display: unset !important;
+  }
+
   .sidebar {
     // display: none;
     left: unset !important;
