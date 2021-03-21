@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
+      <img class="menu-exit" id="menu-exit" src="icons/menu-exit.svg" alt="" />
       <div class="logo-container">
         <a class="logo" href="index.html">Playit</a>
       </div>
@@ -29,21 +30,39 @@
         </nav> -->
 
         <div class="side-menu">
-          <img
+          <svg
             class="icon-clickable"
-            src="icons/hotlists.svg"
-            alt=""
-            onload="SVGInject(this)"
-          />
+            xmlns="http://www.w3.org/2000/svg"
+            width="16.338"
+            height="21.784"
+            viewBox="0 0 16.338 21.784"
+          >
+            <path
+              id="Icon_awesome-fire"
+              data-name="Icon awesome-fire"
+              d="M9.19,1.015A1.023,1.023,0,0,0,7.312.46c-5.269,7.7,2.219,8.049,2.219,11.793a2.723,2.723,0,1,1-5.446-.04V8.575a1.021,1.021,0,0,0-1.763-.7A8.507,8.507,0,0,0,0,13.615a8.169,8.169,0,1,0,16.338,0c0-7.245-7.148-8.212-7.148-12.6Z"
+              transform="translate(0 0)"
+              fill="#898989"
+            />
+          </svg>
           <span>Hotlist</span>
         </div>
         <div class="side-menu active">
-          <img
+          <svg
             class="icon-clickable"
-            src="icons/collections.svg"
-            alt=""
-            onload="SVGInject(this)"
-          />
+            xmlns="http://www.w3.org/2000/svg"
+            width="16.65"
+            height="16.65"
+            viewBox="0 0 16.65 16.65"
+          >
+            <path
+              id="Icon_material-collections-bookmark"
+              data-name="Icon material-collections-bookmark"
+              d="M4.665,6.33H3V17.985A1.67,1.67,0,0,0,4.665,19.65H16.32V17.985H4.665ZM17.985,3H7.995A1.67,1.67,0,0,0,6.33,4.665v9.99A1.67,1.67,0,0,0,7.995,16.32h9.99a1.67,1.67,0,0,0,1.665-1.665V4.665A1.67,1.67,0,0,0,17.985,3Zm0,8.325L15.9,10.076l-2.081,1.249V4.665h4.162Z"
+              transform="translate(-3 -3)"
+              fill="#c5ffe6"
+            />
+          </svg>
           <span>Collections</span>
         </div>
       </section>
@@ -69,33 +88,82 @@
         </nav> -->
 
         <div class="side-menu">
-          <img
-            class="icon-click"
-            src="icons/filled-heart.svg"
-            alt=""
-            onload="SVGInject(this)"
-          />
+          <svg
+            class="icon-clickable"
+            xmlns="http://www.w3.org/2000/svg"
+            width="19.128"
+            height="18.392"
+            viewBox="0 0 19.128 18.392"
+          >
+            <path
+              id="Icon_ionic-ios-heart"
+              data-name="Icon ionic-ios-heart"
+              d="M17.353,3.938h-.046a5.232,5.232,0,0,0-4.368,2.391A5.232,5.232,0,0,0,8.571,3.938H8.525a5.2,5.2,0,0,0-5.15,5.2,11.193,11.193,0,0,0,2.2,6.1,38.517,38.517,0,0,0,7.366,7.095,38.517,38.517,0,0,0,7.366-7.095,11.193,11.193,0,0,0,2.2-6.1A5.2,5.2,0,0,0,17.353,3.938Z"
+              transform="translate(-3.375 -3.938)"
+              fill="#898989"
+            />
+          </svg>
           <span>Favourites</span>
         </div>
         <div class="side-menu">
-          <img
-            class="icon-click"
-            src="icons/playlist.svg"
-            alt=""
-            onload="SVGInject(this)"
-          />
+          <svg
+            class="icon-clickable"
+            xmlns="http://www.w3.org/2000/svg"
+            width="19.128"
+            height="13.39"
+            viewBox="0 0 19.128 13.39"
+          >
+            <path
+              id="Icon_material-playlist-play"
+              data-name="Icon material-playlist-play"
+              d="M19.259,11.326H3v1.913H19.259Zm0-3.826H3V9.413H19.259ZM3,17.064H15.433V15.151H3Zm14.346-1.913V20.89l4.782-2.869Z"
+              transform="translate(-3 -7.5)"
+              fill="#898989"
+            />
+          </svg>
           <span>Playlist</span>
         </div>
         <div class="side-menu">
-          <img src="icons/albums.svg" alt="" onload="SVGInject(this)" />
+          <svg
+            class="icon-clickable"
+            xmlns="http://www.w3.org/2000/svg"
+            width="19.128"
+            height="19.128"
+            viewBox="0 0 19.128 19.128"
+          >
+            <path
+              id="Icon_material-album"
+              data-name="Icon material-album"
+              d="M12.564,3a9.564,9.564,0,1,0,9.564,9.564A9.568,9.568,0,0,0,12.564,3Zm0,13.868a4.3,4.3,0,1,1,4.3-4.3A4.3,4.3,0,0,1,12.564,16.868Zm0-5.26a.956.956,0,1,0,.956.956A.959.959,0,0,0,12.564,11.608Z"
+              transform="translate(-3 -3)"
+              fill="#898989"
+            />
+          </svg>
           <span>Albums</span>
         </div>
         <div class="side-menu">
-          <img src="icons/artists.svg" alt="" onload="SVGInject(this)" />
+          <svg
+            class="icon-clickable"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16.5"
+            height="24"
+            viewBox="0 0 16.5 24"
+          >
+            <path
+              id="Icon_awesome-microphone-alt"
+              data-name="Icon awesome-microphone-alt"
+              d="M15.75,9H15a.75.75,0,0,0-.75.75V12a6.007,6.007,0,0,1-6.6,5.971,6.182,6.182,0,0,1-5.4-6.238V9.75A.75.75,0,0,0,1.5,9H.75A.75.75,0,0,0,0,9.75v1.882a8.508,8.508,0,0,0,7.125,8.517v1.6H4.5a.75.75,0,0,0-.75.75v.75A.75.75,0,0,0,4.5,24H12a.75.75,0,0,0,.75-.75V22.5a.75.75,0,0,0-.75-.75H9.375V20.167A8.258,8.258,0,0,0,16.5,12V9.75A.75.75,0,0,0,15.75,9Zm-7.5,7.5a4.5,4.5,0,0,0,4.5-4.5h-4c-.276,0-.5-.168-.5-.375v-.75c0-.207.224-.375.5-.375h4V9h-4c-.276,0-.5-.168-.5-.375v-.75c0-.207.224-.375.5-.375h4V6h-4c-.276,0-.5-.168-.5-.375v-.75c0-.207.224-.375.5-.375h4a4.5,4.5,0,0,0-9,0V12A4.5,4.5,0,0,0,8.25,16.5Z"
+              fill="#898989"
+            />
+          </svg>
           <span>Artists</span>
         </div>
       </section>
       <input type="button" class="btn subs-btn" value="Subscribe" />
+      <!-- <h1>Lorem, ipsum.</h1>
+      <h1>Lorem, ipsum.</h1>
+      <h1>Lorem, ipsum.</h1>
+      <h1>Lorem, ipsum.</h1> -->
     </aside>
 
     <header>
@@ -109,12 +177,18 @@
           placeholder="Search for songs, artists etc."
         />
       </div>
+      <div class="logo-container">
+        <a class="logo" href="index.html">Playit</a>
+      </div>
       <div class="header-account-settings">
-        <img src="icons/notifications.svg" alt="" />
-        <img src="icons/settings.svg" alt="" />
+        <img class="notification" src="icons/notifications.svg" alt="" />
+        <img class="settings" src="icons/settings.svg" alt="" />
         <div class="profile-pic-container">
           <img class="profile-pic" src="images/person.jpg" alt="" />
         </div>
+      </div>
+      <div class="menu-btn-mobile-tab click-effect" id="menu-btn-mobile-tab">
+        <img src="icons/menu.svg" alt="" />
       </div>
     </header>
 
@@ -126,7 +200,7 @@
             <div class="thumbnail-container">
               <img src="images/thumbnail.jpg" alt="" />
             </div>
-            <p class="song-name">Hey Boy</p>
+            <p class="song-name">Hey Boy Hey Boy Hey Boy Hey Boy Hey Boy</p>
             <p class="song-artist">SiA (feat. Burna Boy)</p>
           </div>
 
@@ -251,6 +325,6 @@
       <img class="full-min-player-toggle" src="icons/arrow-up.svg" alt="" />
     </section>
 
-    <script src="js/svg-inject.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --primary-color: #2f0042;
   --secondary-color: #ffa47d;
@@ -18,6 +19,34 @@
   outline: none;
 }
 
+body::-webkit-scrollbar-track {
+  background-color: #1f002c;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #420c59;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #4d0e68;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-container .logo {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  width: 100%;
+}
+
 .sidebar {
   background: var(--sidebar-color);
   width: 20rem;
@@ -25,27 +54,20 @@
   position: fixed;
   left: 0;
   padding: 1.5rem 3.5rem;
+  padding-bottom: 9rem;
+  overflow-y: auto;
+  z-index: 5;
 }
 
 .sidebar > * {
   margin: 2.2rem 0;
 }
 
-.sidebar .logo-container {
-  text-align: center;
-}
-
-.sidebar .logo-container .logo {
-  font-family: "Great Vibes", cursive;
-  font-size: 1.2rem;
-  color: var(--secondary-color);
-  width: 100%;
-}
-
 .sidebar section h1 {
   font-size: 1rem;
   color: var(--primary-text-color);
   margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .sidebar section .side-menu {
@@ -129,6 +151,23 @@
   margin-top: 1.1rem;
 }
 
+.sidebar::-webkit-scrollbar-track {
+  background-color: #1f002c;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #390050;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #3e0057;
+}
+
 header {
   margin-left: 20rem;
   padding: 4.5rem 3.5rem;
@@ -203,6 +242,7 @@ header .header-account-settings .profile-pic {
   color: var(--primary-text-color);
   font-size: 1.8rem;
   margin-bottom: 2rem;
+  font-weight: 700;
 }
 
 .main .song-list {
@@ -222,6 +262,7 @@ header .header-account-settings .profile-pic {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 0.2rem;
+  width: 13rem;
 }
 
 .main .song-info img {
@@ -231,9 +272,15 @@ header .header-account-settings .profile-pic {
   border-radius: 1.5rem;
 }
 
+.main .song-info p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .main .song-info .song-name {
   font-size: 0.9rem;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--primary-text-color);
 }
 
@@ -250,6 +297,7 @@ header .header-account-settings .profile-pic {
   left: 0;
   bottom: 0;
   padding: 1rem 3.5rem;
+  z-index: 6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,6 +313,9 @@ header .header-account-settings .profile-pic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 2rem;
 }
 
@@ -288,12 +339,12 @@ header .header-account-settings .profile-pic {
   gap: 0.4rem;
 }
 
-.player .current-song-info .song-name {
+.player .current-song-info > div .song-name {
   color: var(--primary-text-color);
-  font-weight: bold;
+  font-weight: 600;
 }
 
-.player .current-song-info .song-artist {
+.player .current-song-info > div .song-artist {
   font-size: 0.8rem;
   color: var(--secondary-text-color);
 }
@@ -374,5 +425,113 @@ header .header-account-settings .profile-pic {
 .player .full-min-player-toggle {
   width: 1rem;
   height: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .sidebar {
+    left: unset !important;
+    right: -20rem;
+    padding: 2.5rem;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  .sidebar .menu-exit {
+    top: 1rem;
+    width: 1rem;
+    height: 1rem;
+    margin: 0rem !important;
+    cursor: pointer;
+  }
+  .sidebar .logo-container {
+    display: none;
+  }
+  .sidebar h1 {
+    font-size: 1.2rem !important;
+  }
+  header,
+  main {
+    margin: unset !important;
+  }
+  header {
+    padding: 3rem 2.5rem !important;
+    padding-bottom: 1rem !important;
+  }
+  header .search-input {
+    display: none;
+  }
+  header .header-account-settings {
+    display: none;
+  }
+  header .menu-btn-mobile-tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  main {
+    padding: 2rem 2.5rem !important;
+    padding-bottom: 8rem !important;
+  }
+  main h1 {
+    font-size: 1.6rem !important;
+    margin-bottom: 1.4rem !important;
+  }
+  main .song-list {
+    gap: 1.2rem !important;
+  }
+  main .song-list .song-info {
+    width: 9rem !important;
+  }
+  main .song-list .song-info img {
+    width: 9rem !important;
+    height: 9rem !important;
+    border-radius: 1rem;
+  }
+  main .song-list .song-info .song-name {
+    font-size: 0.8rem !important;
+  }
+  main .song-list .song-info .song-artist {
+    font-size: 0.7rem !important;
+  }
+  .player {
+    padding: 2rem 2.5rem !important;
+  }
+  .player .current-song-info {
+    gap: 1rem;
+  }
+  .player .current-song-info img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .player .current-song-info > div {
+    gap: 0.2rem;
+  }
+  .player .current-song-info > div .song-name {
+    font-size: 0.9rem;
+  }
+  .player .current-song-info > div .song-artist {
+    font-size: 0.7rem !important;
+  }
+  .player .main-controller,
+  .player .interactivity {
+    display: none !important;
+  }
+  .player .full-min-player-toggle {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
