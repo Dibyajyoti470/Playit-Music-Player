@@ -4,7 +4,7 @@
   --primary-color: #0a0033;
   --secondary-color: #ffa47d;
   --sidebar-color: #09002a;
-  --music-player-color: #13054a;
+  --music-player-color: #190d4a;
   --primary-text-color: #c4c4c4;
   --secondary-text-color: #898989;
   --highlight-color: #c5ffe6;
@@ -549,16 +549,12 @@ header .menu-btn-mobile-tab {
   .player .play-fo-back-controller .forward {
     display: none;
   }
-  .player .play-fo-back-controller .play {
-    margin-left: 3rem;
-  }
   .player .main-controller,
   .player .interactivity {
     display: none !important;
   }
   .player .full-min-player-toggle {
-    width: 0.8rem;
-    height: 0.8rem;
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

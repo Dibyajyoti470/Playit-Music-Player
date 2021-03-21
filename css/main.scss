@@ -7,7 +7,7 @@
   // --sidebar-color: #2a003b;
   --sidebar-color: #09002a;
   // --music-player-color: #390a4d;
-  --music-player-color: #13054a;
+  --music-player-color: #190d4a;
   --primary-text-color: #c4c4c4;
   --secondary-text-color: #898989;
   --highlight-color: #c5ffe6;
@@ -508,10 +508,6 @@ header {
       .forward {
         display: none;
       }
-
-      .play {
-        margin-left: 3rem;
-      }
     }
 
     .main-controller,
@@ -520,8 +516,7 @@ header {
     }
 
     .full-min-player-toggle {
-      width: 0.8rem;
-      height: 0.8rem;
+      display: none;
     }
   }
 }
