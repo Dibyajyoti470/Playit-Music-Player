@@ -479,6 +479,9 @@ header .menu-btn-mobile-tab {
   header .search-input {
     display: none;
   }
+  header .logo-container {
+    display: unset !important;
+  }
   header .header-account-settings {
     display: none;
   }
