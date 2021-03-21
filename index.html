@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playit - A Smart Music Player</title>
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="logo-container">
+        <a class="logo" href="index.html">Playit</a>
+      </div>
+      <section class="discover-section">
+        <h1>Discover</h1>
+        <!-- <nav>
+          <ul>
+            <li>
+              <a href="#"><img src="icons/hotlists.svg" alt="" />Hotlist</a>
+            </li>
+            <li class="active">
+              <a href="#"
+                ><img src="icons/collections.svg" alt="" />Collections</a
+              >
+            </li>
+          </ul>
+        </nav> -->
+
+        <div class="side-menu">
+          <img
+            class="icon-clickable"
+            src="icons/hotlists.svg"
+            alt=""
+            onload="SVGInject(this)"
+          />
+          <span>Hotlist</span>
+        </div>
+        <div class="side-menu active">
+          <img
+            class="icon-clickable"
+            src="icons/collections.svg"
+            alt=""
+            onload="SVGInject(this)"
+          />
+          <span>Collections</span>
+        </div>
+      </section>
+      <section class="library-section">
+        <h1>Library</h1>
+        <!-- <nav>
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="icons/filled-heart.svg" alt="" />Favourites</a
+              >
+            </li>
+            <li>
+              <a href="#"><img src="icons/playlist.svg" alt="" />Playlist</a>
+            </li>
+            <li>
+              <a href="#"><img src="icons/albums.svg" alt="" />Albums</a>
+            </li>
+            <li>
+              <a href="#"><img src="icons/artists.svg" alt="" />Artists</a>
+            </li>
+          </ul>
+        </nav> -->
+
+        <div class="side-menu">
+          <img
+            class="icon-click"
+            src="icons/filled-heart.svg"
+            alt=""
+            onload="SVGInject(this)"
+          />
+          <span>Favourites</span>
+        </div>
+        <div class="side-menu">
+          <img
+            class="icon-click"
+            src="icons/playlist.svg"
+            alt=""
+            onload="SVGInject(this)"
+          />
+          <span>Playlist</span>
+        </div>
+        <div class="side-menu">
+          <img src="icons/albums.svg" alt="" onload="SVGInject(this)" />
+          <span>Albums</span>
+        </div>
+        <div class="side-menu">
+          <img src="icons/artists.svg" alt="" onload="SVGInject(this)" />
+          <span>Artists</span>
+        </div>
+      </section>
+      <input type="button" class="btn subs-btn" value="Subscribe" />
+    </aside>
+
+    <header>
+      <div class="search-container">
+        <div class="search-btn">
+          <img src="icons/search.svg" alt="" />
+        </div>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search for songs, artists etc."
+        />
+      </div>
+      <div class="header-account-settings">
+        <img src="icons/notifications.svg" alt="" />
+        <img src="icons/settings.svg" alt="" />
+        <div class="profile-pic-container">
+          <img class="profile-pic" src="images/person.jpg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="new-releases">
+        <h1>New Releases</h1>
+        <div class="song-list card-list">
+          <div class="song-info card">
+            <div class="thumbnail-container">
+              <img src="images/thumbnail.jpg" alt="" />
+            </div>
+            <p class="song-name">Hey Boy</p>
+            <p class="song-artist">SiA (feat. Burna Boy)</p>
+          </div>
+
+          <div class="song-info card">
+            <div class="thumbnail-container">
+              <img src="images/thumbnail.jpg" alt="" />
+            </div>
+            <p class="song-name">Hey Boy</p>
+            <p class="song-artist">SiA (feat. Burna Boy)</p>
+          </div>
+
+          <div class="song-info card">
+            <div class="thumbnail-container">
+              <img src="images/thumbnail.jpg" alt="" />
+            </div>
+            <p class="song-name">Hey Boy</p>
+            <p class="song-artist">SiA (feat. Burna Boy)</p>
+          </div>
+
+          <div class="song-info card">
+            <div class="thumbnail-container">
+              <img src="images/thumbnail.jpg" alt="" />
+            </div>
+            <p class="song-name">Hey Boy</p>
+            <p class="song-artist">SiA (feat. Burna Boy)</p>
+          </div>
+
+          <div class="song-info card">
+            <div class="thumbnail-container">
+              <img src="images/thumbnail.jpg" alt="" />
+            </div>
+            <p class="song-name">Hey Boy</p>
+            <p class="song-artist">SiA (feat. Burna Boy)</p>
+          </div>
+        </div>
+      </section>
+      <section class="most-popular">
+        <h1>Most Popular</h1>
+        <div class="song-list card-list">
+          <div class="song-info card">
+            <div class="thumbnail-container">
+              <img src="images/thumbnail.jpg" alt="" />
+            </div>
+            <p class="song-name">Shape of You</p>
+            <p class="song-artist">Ed Sheeran</p>
+          </div>
+
+          <div class="song-info card">
+            <div class="thumbnail-container">
+              <img src="images/thumbnail.jpg" alt="" />
+            </div>
+            <p class="song-name">Hey Boy</p>
+            <p class="song-artist">SiA (feat. Burna Boy)</p>
+          </div>
+
+          <div class="song-info card">
+            <div class="thumbnail-container">
+              <img src="images/thumbnail.jpg" alt="" />
+            </div>
+            <p class="song-name">Hey Boy</p>
+            <p class="song-artist">SiA (feat. Burna Boy)</p>
+          </div>
+
+          <div class="song-info card">
+            <div class="thumbnail-container">
+              <img src="images/thumbnail.jpg" alt="" />
+            </div>
+            <p class="song-name">Hey Boy</p>
+            <p class="song-artist">SiA (feat. Burna Boy)</p>
+          </div>
+
+          <div class="song-info card">
+            <div class="thumbnail-container">
+              <img src="images/thumbnail.jpg" alt="" />
+            </div>
+            <p class="song-name">Hey Boy</p>
+            <p class="song-artist">SiA (feat. Burna Boy)</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="player">
+      <div class="current-song-info">
+        <img src="images/thumbnail.jpg" alt="" />
+        <div>
+          <p class="song-name">Hey Boy</p>
+          <p class="song-artist">SiA (feat. Burna Boy)</p>
+        </div>
+      </div>
+
+      <div class="music-controller">
+        <div class="play-fo-back-controller">
+          <img src="icons/backward.svg" alt="" />
+          <img src="icons/play.svg" alt="" />
+          <img src="icons/forward.svg" alt="" />
+        </div>
+
+        <div class="main-controller">
+          <p class="time-elapsed">1:10</p>
+          <div class="slider-container">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+          <p class="total-duration">2:29</p>
+        </div>
+
+        <div class="interactivity">
+          <img src="icons/volume.svg" alt="" />
+          <img src="icons/outline-heart.svg" alt="" />
+          <img src="icons/loop.svg" alt="" />
+          <div class="other-options">...</div>
+        </div>
+      </div>
+
+      <img class="full-min-player-toggle" src="icons/arrow-up.svg" alt="" />
+    </section>
+
+    <script src="js/svg-inject.js"></script>
+  </body>
+</html>
