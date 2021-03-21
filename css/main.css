@@ -20,7 +20,7 @@
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #1f002c;
+  background-color: #080024;
 }
 
 body::-webkit-scrollbar {
@@ -29,11 +29,11 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: #420c59;
+  background-color: #2c1b5e;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #4d0e68;
+  background-color: #3d2a75;
 }
 
 .menu-exit {
@@ -157,7 +157,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .sidebar .subs-btn:hover {
-  background-color: #2c1b5e;
+  background-color: #3d2a75;
 }
 
 .sidebar::-webkit-scrollbar-track {
