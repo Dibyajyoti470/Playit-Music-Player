@@ -4,7 +4,7 @@
   --primary-color: #0a0033;
   --secondary-color: #ffa47d;
   --sidebar-color: #09002a;
-  --music-player-color: #390a4d;
+  --music-player-color: #13054a;
   --primary-text-color: #c4c4c4;
   --secondary-text-color: #898989;
   --highlight-color: #c5ffe6;
@@ -473,7 +473,7 @@ header .menu-btn-mobile-tab {
     margin: unset !important;
   }
   header {
-    padding: 3rem 2.5rem !important;
+    padding: 1.5rem 1.5rem !important;
     padding-bottom: 1rem !important;
   }
   header .search-input {
@@ -501,7 +501,7 @@ header .menu-btn-mobile-tab {
     transition: all 0.3s ease-in-out;
   }
   main {
-    padding: 2rem 2.5rem !important;
+    padding: 1.5rem 1.5rem !important;
     padding-bottom: 8rem !important;
   }
   main h1 {
@@ -526,7 +526,8 @@ header .menu-btn-mobile-tab {
     font-size: 0.7rem !important;
   }
   .player {
-    padding: 2rem 2.5rem !important;
+    padding: 1rem 1.5rem !important;
+    height: unset;
   }
   .player .current-song-info {
     gap: 1rem;
@@ -543,6 +544,13 @@ header .menu-btn-mobile-tab {
   }
   .player .current-song-info > div .song-artist {
     font-size: 0.7rem !important;
+  }
+  .player .play-fo-back-controller .backward,
+  .player .play-fo-back-controller .forward {
+    display: none;
+  }
+  .player .play-fo-back-controller .play {
+    margin-left: 3rem;
   }
   .player .main-controller,
   .player .interactivity {

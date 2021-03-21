@@ -6,7 +6,8 @@
   --secondary-color: #ffa47d;
   // --sidebar-color: #2a003b;
   --sidebar-color: #09002a;
-  --music-player-color: #390a4d;
+  // --music-player-color: #390a4d;
+  --music-player-color: #13054a;
   --primary-text-color: #c4c4c4;
   --secondary-text-color: #898989;
   --highlight-color: #c5ffe6;
@@ -421,7 +422,7 @@ header {
   }
 
   header {
-    padding: 3rem 2.5rem !important;
+    padding: 1.5rem 1.5rem !important;
     padding-bottom: 1rem !important;
 
     .search-input {
@@ -447,7 +448,7 @@ header {
   }
 
   main {
-    padding: 2rem 2.5rem !important;
+    padding: 1.5rem 1.5rem !important;
     padding-bottom: 8rem !important;
 
     h1 {
@@ -479,7 +480,8 @@ header {
   }
 
   .player {
-    padding: 2rem 2.5rem !important;
+    padding: 1rem 1.5rem !important;
+    height: unset;
 
     .current-song-info {
       gap: 1rem;
@@ -502,7 +504,16 @@ header {
     }
 
     .play-fo-back-controller {
+      .backward,
+      .forward {
+        display: none;
+      }
+
+      .play {
+        margin-left: 3rem;
+      }
     }
+
     .main-controller,
     .interactivity {
       display: none !important;
