@@ -522,9 +522,6 @@ header .menu-btn-mobile-tab {
     font-size: 1.4rem !important;
     margin-bottom: 1.4rem !important;
   }
-  main h1 span {
-    color: #ff3588;
-  }
   main .song-list {
     gap: 1rem !important;
   }
@@ -537,10 +534,10 @@ header .menu-btn-mobile-tab {
     border-radius: 1rem;
   }
   main .song-list .song-info .song-name {
-    font-size: 0.8rem !important;
+    font-size: 0.6rem !important;
   }
   main .song-list .song-info .song-artist {
-    font-size: 0.7rem !important;
+    font-size: 0.5rem !important;
   }
   .player {
     padding: 1rem 1.5rem !important;
