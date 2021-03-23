@@ -485,8 +485,8 @@ header .menu-btn-mobile-tab {
     padding-bottom: 1rem !important;
   }
   header img {
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.9rem;
+    height: 0.9rem;
   }
   header .search-input {
     display: none;
@@ -509,7 +509,7 @@ header .menu-btn-mobile-tab {
   }
   header .logo-container .logo {
     font-family: "Luckiest Guy", cursive;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: medium;
     letter-spacing: 1px;
   }
