@@ -44,14 +44,40 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .logo-container {
-  text-align: center;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.1rem;
 }
 
 .logo-container .logo {
-  font-family: "Great Vibes", cursive;
-  font-size: 1.2rem;
   color: var(--secondary-color);
-  width: 100%;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1rem;
+  font-weight: medium;
+  letter-spacing: 1px;
+}
+
+.logo-container .logo span {
+  font-family: "Monoton", cursive;
+}
+
+.logo-container .line-design {
+  border-radius: 10rem;
+  width: 4rem;
+  height: 0.15rem;
+  background: -webkit-gradient(linear, left top, right top, from(#ff3588), to(#ac5ccd));
+  background: linear-gradient(to right, #ff3588, #ac5ccd);
 }
 
 .sidebar {
@@ -227,7 +253,7 @@ header .search-container .search-input {
 }
 
 header .logo-container {
-  display: none;
+  display: none !important;
 }
 
 header .header-account-settings {
@@ -495,33 +521,6 @@ header .menu-btn-mobile-tab {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 0.1rem;
-  }
-  header .logo-container .logo {
-    font-family: "Luckiest Guy", cursive;
-    font-size: 0.8rem;
-    font-weight: medium;
-    letter-spacing: 1px;
-  }
-  header .logo-container .logo span {
-    font-family: "Monoton", cursive;
-  }
-  header .logo-container .line-design {
-    border-radius: 10rem;
-    width: 100%;
-    height: 0.15rem;
-    background: -webkit-gradient(linear, left top, right top, from(#ff3588), to(#ac5ccd));
-    background: linear-gradient(to right, #ff3588, #ac5ccd);
   }
   header .header-account-settings {
     display: none;
