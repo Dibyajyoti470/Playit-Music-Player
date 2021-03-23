@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 :root {
   --primary-color: #0a0033;
   --secondary-color: #ffa47d;
@@ -481,11 +482,19 @@ header .menu-btn-mobile-tab {
     padding: 1.5rem 1.5rem !important;
     padding-bottom: 1rem !important;
   }
+  header .search-container {
+    display: none;
+  }
   header .search-input {
     display: none;
   }
   header .logo-container {
     display: unset !important;
+  }
+  header .logo-container .logo {
+    font-family: "Kaushan Script", cursive;
+    font-size: 1rem;
+    font-weight: medium;
   }
   header .header-account-settings {
     display: none;
@@ -510,18 +519,21 @@ header .menu-btn-mobile-tab {
     padding-bottom: 8rem !important;
   }
   main h1 {
-    font-size: 1.6rem !important;
+    font-size: 1.4rem !important;
     margin-bottom: 1.4rem !important;
   }
+  main h1 span {
+    color: #ff3588;
+  }
   main .song-list {
-    gap: 1.2rem !important;
+    gap: 1rem !important;
   }
   main .song-list .song-info {
-    width: 9rem !important;
+    width: 8rem !important;
   }
   main .song-list .song-info img {
-    width: 9rem !important;
-    height: 9rem !important;
+    width: 8rem !important;
+    height: 8rem !important;
     border-radius: 1rem;
   }
   main .song-list .song-info .song-name {
