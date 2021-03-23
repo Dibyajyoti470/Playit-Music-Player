@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="23" viewBox="0 0 53 23">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ac5ccd"/>
+      <stop offset="1" stop-color="#ff3588"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_32" data-name="Group 32" transform="translate(-181 -30)">
+    <text id="Playit" transform="translate(207 46)" fill="#ffa47d" font-size="14" font-family="Monoton-Regular, Monoton" letter-spacing="0.079em"><tspan x="-25.956" y="0">P</tspan><tspan y="0" font-family="LuckiestGuy-Regular, Luckiest Guy">layit</tspan></text>
+    <rect id="Rectangle_14" data-name="Rectangle 14" width="2" height="53" rx="1" transform="translate(234 51) rotate(90)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
