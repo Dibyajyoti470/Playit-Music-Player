@@ -581,6 +581,7 @@ header .menu-btn-mobile-tab {
     font-size: 0.55rem !important;
   }
   .player {
+    display: none !important;
     padding: 1rem 1.5rem !important;
     height: unset;
   }
