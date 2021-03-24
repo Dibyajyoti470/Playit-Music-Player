@@ -20,6 +20,7 @@
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body::-webkit-scrollbar-track {
