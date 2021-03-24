@@ -282,7 +282,7 @@ header .menu-btn-mobile-tab {
   padding: 4rem 3.5rem;
   padding-bottom: 9rem;
   overflow: hidden;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 .main h1 {
