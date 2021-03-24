@@ -8,8 +8,8 @@
   --secondary-color: #ffa47d;
   --sidebar-color: #09002a;
   --music-player-color: #190d4a;
-  --primary-text-color: #c4c4c4;
-  --secondary-text-color: #898989;
+  --primary-text-color: white;
+  --secondary-text-color: #b4b4b4;
   --highlight-color: #c5ffe6;
 }
 
@@ -541,15 +541,16 @@ header .menu-btn-mobile-tab {
     transition: all 0.3s ease-in-out;
   }
   main {
-    padding: 1.5rem 1.5rem !important;
-    padding-bottom: 8rem !important;
+    padding: 0.5rem 1.5rem !important;
+    padding-bottom: 5rem !important;
   }
   main h1 {
     font-size: 1.4rem !important;
-    margin-bottom: 1.4rem !important;
+    margin-bottom: 0.8rem !important;
   }
   main .song-list {
     gap: 1rem !important;
+    margin-bottom: 2rem !important;
   }
   main .song-list .song-info {
     width: 8rem !important;

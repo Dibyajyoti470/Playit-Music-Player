@@ -11,8 +11,10 @@
   --sidebar-color: #09002a;
   // --music-player-color: #390a4d;
   --music-player-color: #190d4a;
-  --primary-text-color: #c4c4c4;
-  --secondary-text-color: #898989;
+  // --primary-text-color: #c4c4c4;
+  --primary-text-color: white;
+  // --secondary-text-color: #898989;
+  --secondary-text-color: #b4b4b4;
   --highlight-color: #c5ffe6;
 }
 
@@ -270,6 +272,12 @@ header {
     font-size: 1.8rem;
     margin-bottom: 2rem;
     font-weight: 700;
+    // letter-spacing: 1px;
+    // font-family: "Luckiest Guy", cursive;
+
+    span {
+      // font-family: "Luckiest Guy", cursive;
+    }
   }
 
   .song-list {
@@ -517,12 +525,12 @@ header {
   }
 
   main {
-    padding: 1.5rem 1.5rem !important;
-    padding-bottom: 8rem !important;
+    padding: 0.5rem 1.5rem !important;
+    padding-bottom: 5rem !important;
 
     h1 {
       font-size: 1.4rem !important;
-      margin-bottom: 1.4rem !important;
+      margin-bottom: 0.8rem !important;
       span {
         // color: #ff3588;
       }
@@ -530,6 +538,7 @@ header {
 
     .song-list {
       gap: 1rem !important;
+      margin-bottom: 2rem !important;
 
       .song-info {
         width: 8rem !important;
