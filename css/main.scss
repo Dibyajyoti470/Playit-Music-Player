@@ -438,7 +438,7 @@ header {
     // display: none;
     left: unset !important;
     right: -20rem;
-    padding: 2.5rem;
+    padding: 1.5rem;
     transition: transform 0.6s ease-in-out;
     transform-origin: left;
 
@@ -451,11 +451,27 @@ header {
     }
 
     .logo-container {
-      display: none;
+      display: none !important;
     }
 
     h1 {
-      font-size: 1.2rem !important;
+      font-size: 0.8rem !important;
+    }
+
+    section {
+      padding: 0 1rem;
+      .side-menu {
+        padding: 0.5rem 0;
+        svg {
+          width: 0.8rem;
+          height: 0.8rem;
+          margin-right: 0.5rem !important;
+        }
+
+        span {
+          font-size: 0.65rem !important;
+        }
+      }
     }
   }
 
@@ -531,9 +547,6 @@ header {
     h1 {
       font-size: 1.4rem !important;
       margin-bottom: 0.8rem !important;
-      span {
-        // color: #ff3588;
-      }
     }
 
     .song-list {

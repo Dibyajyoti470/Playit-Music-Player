@@ -481,7 +481,7 @@ header .menu-btn-mobile-tab {
   .sidebar {
     left: unset !important;
     right: -20rem;
-    padding: 2.5rem;
+    padding: 1.5rem;
     -webkit-transition: -webkit-transform 0.6s ease-in-out;
     transition: -webkit-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;
@@ -497,10 +497,24 @@ header .menu-btn-mobile-tab {
     cursor: pointer;
   }
   .sidebar .logo-container {
-    display: none;
+    display: none !important;
   }
   .sidebar h1 {
-    font-size: 1.2rem !important;
+    font-size: 0.8rem !important;
+  }
+  .sidebar section {
+    padding: 0 1rem;
+  }
+  .sidebar section .side-menu {
+    padding: 0.5rem 0;
+  }
+  .sidebar section .side-menu svg {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.5rem !important;
+  }
+  .sidebar section .side-menu span {
+    font-size: 0.65rem !important;
   }
   header,
   main {
