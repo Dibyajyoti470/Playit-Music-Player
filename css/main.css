@@ -500,13 +500,13 @@ header .menu-btn-mobile-tab {
     display: none !important;
   }
   .sidebar h1 {
-    font-size: 0.8rem !important;
+    font-size: 1rem !important;
   }
   .sidebar section {
     padding: 0 1rem;
   }
   .sidebar section .side-menu {
-    padding: 0.5rem 0;
+    padding: 0.7rem 0;
   }
   .sidebar section .side-menu svg {
     width: 0.8rem;
@@ -514,7 +514,7 @@ header .menu-btn-mobile-tab {
     margin-right: 0.5rem !important;
   }
   .sidebar section .side-menu span {
-    font-size: 0.65rem !important;
+    font-size: 0.7rem !important;
   }
   header,
   main {
