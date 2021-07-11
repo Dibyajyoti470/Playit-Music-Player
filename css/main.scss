@@ -12,12 +12,12 @@
   // --primary-color: #090909;
   --secondary-color: #ffa47d;
   // --sidebar-color: #2a003b;
-  --sidebar-color: #09002a;
+  --sidebar-color: #090025;
   // --sidebar-color: #1e1e1e;
   // --music-player-color: #390a4d;
   --music-player-color: #190d4a;
   // --primary-text-color: #c4c4c4;
-  --primary-text-color: rgb(243, 243, 243);
+  --primary-text-color: #f3f3f3;
   // --secondary-text-color: #898989;
   --secondary-text-color: #b4b4b4;
   --highlight-color: #c5ffe6;
@@ -156,7 +156,8 @@ body {
       }
 
       span {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
+        font-weight: 500;
         color: rgba(255, 255, 255, 0.5);
         transition: color 0.3s ease-in;
       }
@@ -428,7 +429,7 @@ header {
 
   .music-controller {
     display: flex;
-    gap: 3rem;
+    gap: 5rem;
 
     .play-fo-back-controller {
       display: flex;
@@ -439,15 +440,36 @@ header {
         transform: scale(0.8);
       }
 
+      i {
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        &:active {
+          transform: scale(1);
+        }
+      }
+
       .play {
         font-size: 2.8rem;
-        color: rgba(255, 255, 255, 0.4);
+        color: #e8e7ed;
       }
 
       .backward,
       .forward {
         font-size: 1rem;
-        color: rgba(255, 255, 255, 0.3);
+        color: #a19bb5;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        &:active {
+          transform: scale(1);
+        }
       }
     }
 
@@ -458,7 +480,7 @@ header {
 
       p {
         font-size: 0.8rem;
-        font-weight: 600;
+        font-weight: 500;
         color: var(--secondary-text-color);
       }
 
@@ -476,18 +498,37 @@ header {
     .interactivity {
       display: flex;
       align-items: center;
-      gap: 2rem;
+      gap: 1.2rem;
 
       img {
         width: 0.9rem;
         height: 0.9rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
+
+      // i {
+      //   width: 0.9rem;
+      //   height: 0.9rem;
+      //   color: rgba(255, 255, 255, 0.6);
+      //   transition: all 0.08s ease-in;
+      //   cursor: pointer;
+
+      //   &:hover {
+      //     color: rgba(255, 255, 255, 0.9);
+      //   }
+      // }
 
       .other-options {
         color: var(--secondary-text-color);
         font-weight: bold;
         letter-spacing: 0.1rem;
         margin-bottom: 0.5rem;
+        cursor: pointer;
       }
     }
   }
@@ -495,6 +536,7 @@ header {
   .full-min-player-toggle {
     width: 0.9rem;
     height: 0.9rem;
+    cursor: pointer;
   }
 
   .loading-bar {

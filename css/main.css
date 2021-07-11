@@ -9,9 +9,9 @@
 :root {
   --primary-color: #0a0033;
   --secondary-color: #ffa47d;
-  --sidebar-color: #09002a;
+  --sidebar-color: #090025;
   --music-player-color: #190d4a;
-  --primary-text-color: rgb(243, 243, 243);
+  --primary-text-color: #f3f3f3;
   --secondary-text-color: #b4b4b4;
   --highlight-color: #c5ffe6;
 }
@@ -133,7 +133,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .sidebar section .side-menu span {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.5);
   -webkit-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
@@ -444,7 +445,7 @@ header .menu-btn-mobile-tab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 3rem;
+  gap: 5rem;
 }
 
 .player .music-controller .play-fo-back-controller {
@@ -462,15 +463,43 @@ header .menu-btn-mobile-tab {
           transform: scale(0.8);
 }
 
+.player .music-controller .play-fo-back-controller i {
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.player .music-controller .play-fo-back-controller i:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.player .music-controller .play-fo-back-controller i:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .player .music-controller .play-fo-back-controller .play {
   font-size: 2.8rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: #e8e7ed;
 }
 
 .player .music-controller .play-fo-back-controller .backward,
 .player .music-controller .play-fo-back-controller .forward {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: #a19bb5;
+}
+
+.player .music-controller .play-fo-back-controller .backward:hover,
+.player .music-controller .play-fo-back-controller .forward:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.player .music-controller .play-fo-back-controller .backward:active,
+.player .music-controller .play-fo-back-controller .forward:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .player .music-controller .main-controller {
@@ -485,7 +514,7 @@ header .menu-btn-mobile-tab {
 
 .player .music-controller .main-controller p {
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--secondary-text-color);
 }
 
@@ -510,12 +539,20 @@ header .menu-btn-mobile-tab {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2rem;
+  gap: 1.2rem;
 }
 
 .player .music-controller .interactivity img {
   width: 0.9rem;
   height: 0.9rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.player .music-controller .interactivity img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .player .music-controller .interactivity .other-options {
@@ -523,11 +560,13 @@ header .menu-btn-mobile-tab {
   font-weight: bold;
   letter-spacing: 0.1rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 
 .player .full-min-player-toggle {
   width: 0.9rem;
   height: 0.9rem;
+  cursor: pointer;
 }
 
 .player .loading-bar {
