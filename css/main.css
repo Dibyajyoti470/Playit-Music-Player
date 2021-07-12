@@ -543,8 +543,8 @@ header .menu-btn-mobile-tab {
 }
 
 .player .music-controller .interactivity img {
-  width: 0.9rem;
-  height: 0.9rem;
+  width: 1rem;
+  height: 1rem;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
